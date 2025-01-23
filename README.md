@@ -10,4 +10,12 @@
   - ![esp32 bak bak](https://github.com/user-attachments/assets/ad510dd9-e1c6-43c7-a7f2-dede058a4d55)   ![esp32 c3 bak bak](https://github.com/user-attachments/assets/e3ff696d-ea86-488e-9baa-d51a653e5871)
 - ปุ่มกด
   - ![btn](https://github.com/user-attachments/assets/fdfcbe7f-2956-4075-96ac-ddc428b21e3c)
+- หลอด LED
+  - ![led](https://github.com/user-attachments/assets/066509de-0232-4343-87b9-503fbe5afb4e)
+- ตัวรับแสง LDR
+  - ![LDR](https://github.com/user-attachments/assets/7039e88f-f174-420f-bd35-d0a435fa26d8)
+- ตัวต้านทาน (R)
+  - ![R](https://github.com/user-attachments/assets/2de20a5d-d331-4426-898e-c0de57905a1f)
+- ตัวต่อไฟ Terminal
+  - ![terminal](https://github.com/user-attachments/assets/b0b5b466-7c3b-4ede-87fd-14785ebb415f)
 
