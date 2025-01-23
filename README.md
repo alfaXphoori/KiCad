@@ -22,7 +22,13 @@
 ### การใช้งานโปรแกรม KiCad EDA
 - https://www.kicad.org/
 1. เปิดโปรแกรมจากปุ่ม Start และ ค้นหา Kicad
+   <img
+src=“images/SubPronouns.jpg”
+raw=true
+alt=“Subject Pronouns”
+style=“margin-right: 10px;”
+/>
  - ![Screenshot 2025-01-23 211224](https://github.com/user-attachments/assets/000366e6-a9db-40fb-8763-ecdff5a4c994)
 2. สร้าง Project
- - ![Uploading 1.png…]()
+ - 
 
