@@ -22,5 +22,6 @@
 ### การใช้งานโปรแกรม KiCad EDA
 - https://www.kicad.org/
 1. เปิดโปรแกรมจากปุ่ม Start และ ค้นหา Kicad
-
-![Screenshot 2025-01-23 211224](https://github.com/user-attachments/assets/000366e6-a9db-40fb-8763-ecdff5a4c994)
+ - ![Screenshot 2025-01-23 211224](https://github.com/user-attachments/assets/000366e6-a9db-40fb-8763-ecdff5a4c994)
+2. สร้าง Project ใหม่ขึ้นมา
+ - 
