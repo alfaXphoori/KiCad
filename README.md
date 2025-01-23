@@ -7,4 +7,4 @@
 
 ### อุปกรณ์อิเล็กทรอนิกส์
 - ESP32 C3 Super Mini (ส่วนประมวลผล)
-  - ![esp32 bak](https://github.com/user-attachments/assets/83345d36-3028-402e-839e-c52c3e23814e)![esp32 c3 bak](https://github.com/user-attachments/assets/5f67a0fb-1370-4ea9-96bc-7f60870e2e6f)
+  - ![esp32 bak](https://github.com/user-attachments/assets/83345d36-3028-402e-839e-c52c3e23814e)     ![esp32 c3 bak](https://github.com/user-attachments/assets/5f67a0fb-1370-4ea9-96bc-7f60870e2e6f)
