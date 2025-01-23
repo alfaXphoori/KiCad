@@ -115,7 +115,7 @@
 43. เลือก Route tracks (X) เดินลายวงจร
  - ![Screenshot 2025-01-23 221955](https://github.com/user-attachments/assets/756840f7-d7c2-4d60-9e01-0464a6fb55d1)
 
-#### ADD Plugin to Kicad
+#### Add Plugin to Kicad
 44. กด Plugin and Content Manager
  - ![Screenshot 2025-01-23 222132](https://github.com/user-attachments/assets/432f7ee7-ac68-4090-bd56-5f7b64f3a5c2)
 45. ค้นหา Freerouting & Fabrication Toolkit และ ติดตั้ง
