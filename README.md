@@ -3,6 +3,7 @@
 วงจรตัวอย่างสำหรับการออกแบบวงจร PCB ด้วย Thinkercad
 - https://www.tinkercad.com/things/eSUcswWTFzh-ledldr?sharecode=JfBLzF_0L9jgbdxzz1LCe_89Y2LhkJQhNdCu0lRxLeg
 ![t0](https://github.com/user-attachments/assets/8e69e0ec-dfc7-4d61-a3cd-85a739e22710)
+[สัญลักษณ์ทางอิเล็กทรอนิกส์.pptx](https://github.com/user-attachments/files/18528962/default.pptx)
 
 ### อุปกรณ์อิเล็กทรอนิกส์
 - ESP32 C3 Super Mini (ส่วนประมวลผล)
@@ -153,3 +154,4 @@
 58. ดูลาย 3D จาก JLCPCB
  - ![Screenshot 2025-01-23 223649](https://github.com/user-attachments/assets/dc4665b4-03bf-4544-9e0b-363c73383c4e)
 
+https://www.canva.com/design/DAGdEUbxk0E/IqLkosl9fwG4LXA7SQ4JsQ/view?utm_content=DAGdEUbxk0E&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h1f56214bf2
