@@ -1,8 +1,11 @@
 ## อบรมการทำแผ่น PCB ด้วย โปรแกรม KiCad
+Link ส่ง Gerber file
+- https://docs.google.com/forms/d/e/1FAIpQLSfGHWDIICSS3bTi8RHA6vuZX9OJzkEedFuKs5eqMMXVEN_mVA/viewform?usp=dialog
 ### วงจรตัวอย่าง 
 วงจรตัวอย่างสำหรับการออกแบบวงจร PCB ด้วย Thinkercad
 - https://www.tinkercad.com/things/eSUcswWTFzh-ledldr?sharecode=JfBLzF_0L9jgbdxzz1LCe_89Y2LhkJQhNdCu0lRxLeg
 ![t0](https://github.com/user-attachments/assets/8e69e0ec-dfc7-4d61-a3cd-85a739e22710)
+![esp32 pin](https://github.com/user-attachments/assets/befdf9ab-9e73-42b1-82ec-ba1d9e9a0179)
 
 ### อุปกรณ์อิเล็กทรอนิกส์
 - ESP32 C3 Super Mini (ส่วนประมวลผล)
@@ -115,7 +118,7 @@
 43. เลือก Route tracks (X) เดินลายวงจร
  - ![Screenshot 2025-01-23 221955](https://github.com/user-attachments/assets/756840f7-d7c2-4d60-9e01-0464a6fb55d1)
 
-#### ADD Plugin to Kicad
+#### Add Plugin to Kicad
 44. กด Plugin and Content Manager
  - ![Screenshot 2025-01-23 222132](https://github.com/user-attachments/assets/432f7ee7-ac68-4090-bd56-5f7b64f3a5c2)
 45. ค้นหา Freerouting & Fabrication Toolkit และ ติดตั้ง
@@ -153,3 +156,4 @@
 58. ดูลาย 3D จาก JLCPCB
  - ![Screenshot 2025-01-23 223649](https://github.com/user-attachments/assets/dc4665b4-03bf-4544-9e0b-363c73383c4e)
 
+https://www.canva.com/design/DAGdEUbxk0E/IqLkosl9fwG4LXA7SQ4JsQ/view?utm_content=DAGdEUbxk0E&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h1f56214bf2
