@@ -5,7 +5,8 @@
 💻 ใช้ **KiCad** เป็นซอฟต์แวร์หลักในการออกแบบ  
 📜 ให้แนบ **ไฟล์โปรเจกต์, ภาพแคปหน้าจอ และ Gerber Files**  
 ✅ คะแนนเต็ม **40 คะแนน**  
-
+✅ ส่งไม่เกิน วันที่ 11/03/2025 เวลา 12.30
+📋 ส่งคำตอบผ่าน Google Form: [คลิกที่นี่](https://docs.google.com/forms/d/e/1FAIpQLSe751U0PH1iktLV8YOlEZR4GnUSjFnjYr8LZcj1buEsRo9ZgA/viewform?usp=dialog)
 ---
 
 ## 🟢 1. สร้างโปรเจค (2 คะแนน)  
