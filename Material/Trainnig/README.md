@@ -1,6 +1,4 @@
 ## อบรมการทำแผ่น PCB ด้วย โปรแกรม KiCad
-Link ส่ง Gerber file
-- https://docs.google.com/forms/d/e/1FAIpQLSfGHWDIICSS3bTi8RHA6vuZX9OJzkEedFuKs5eqMMXVEN_mVA/viewform?usp=dialog
 ### วงจรตัวอย่าง 
 วงจรตัวอย่างสำหรับการออกแบบวงจร PCB ด้วย Thinkercad
 - https://www.tinkercad.com/things/eSUcswWTFzh-ledldr?sharecode=JfBLzF_0L9jgbdxzz1LCe_89Y2LhkJQhNdCu0lRxLeg
