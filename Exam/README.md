@@ -90,23 +90,21 @@
 | Min Via Hole Diameter | 0.3 mm |
 | Min Via Annular Width | 0.1 mm |
 
-<details>
-<summary>📸 ดูตัวอย่าง Board Setup</summary>
-
 > **Physical:**  
 > ![Physical Board Setup](imgs/Physical_Board_Setup.png)
 
 > **Constraints:**  
 > ![Constraints Board Setup](imgs/Constraints_Board_Setup.png)
 
-> **Violations:**  
+> **Violation Severity:**  
 > ![Violation Board Setup](imgs/Violation_Board_Setup.png)
-
-</details>
 
 ---
 
 ## 📐 งานที่ 2 — Schematic (ERC)
+
+> **ตัวอย่าง Symbol Fields Table (Reference / Value / Footprint):**  
+> ![Symbol Fields Table](imgs/Symbol_Fields_Table.png)
 
 1. ไปที่ **Tools → Annotate Schematic** → Annotate All
 2. เพิ่ม `PWR_FLAG` บน Net `VBUS` และ `+3V3`
@@ -150,12 +148,6 @@
 ## 🔌 งานที่ 4 — PCB Routing
 
 ### 🗃️ ตั้งค่า Net Classes
-
-| Net Class | Net | Track Width | Clearance |
-|:----------|:----|:-----------:|:---------:|
-| `USB_DIFF` | USB_DP, USB_DM | 0.2 mm | 0.2 mm |
-| `POWER` | VBUS, +3V3 | 0.5 mm | 0.3 mm |
-| `Default` | ทุก Net อื่น | 0.2 mm | 0.2 mm |
 
 > **ตัวอย่าง Net Classes:**  
 > ![Net Classes Board Setup](imgs/Net_Classes_Board_Setup.png)
