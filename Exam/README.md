@@ -1,7 +1,7 @@
 ﻿# สอบปฏิบัติ: การออกแบบวงจร PCB ด้วย KiCad
 ## วิชา: การออกแบบ PCB ด้วย KiCad  
 **ชื่อ:** ___________________________  **รหัสนักศึกษา:** ___________________________  
-**สาขา:** CE6841/21  **วันที่:** 4 มีนาคม 2026  **เวลา: 3 ชั่วโมง  คะแนนเต็ม: 30 คะแนน**
+**สาขา:** CE6841/21  **วันที่:** 4 มีนาคม 2026  **เวลา: 3 ชั่วโมง**
 
 ---
 
@@ -10,7 +10,7 @@
 > 2. ออกแบบ **Schematic** และ **PCB Layout** ตามข้อกำหนดในแต่ละงาน
 > 3. ต้องผ่าน **ERC และ DRC โดยไม่มี Error** ก่อนส่งงาน
 > 4. ส่งไฟล์ทั้ง **Zip Folder** และ **Screenshot** ทั้งหมดตามที่กำหนด
-> 5. **ห้าม** Copy ไฟล์จากโครงการตัวอย่าง ต้องวาดและต่อวงจรเองทั้งหมด
+> 5. **ห้าม** Copy งานคนอื่น ต้องวาดและต่อวงจรเองทั้งหมด
 
 ---
 
@@ -68,7 +68,7 @@
 
 ---
 
-## งานที่ 1: สร้างโครงการและ Board Setup (1 คะแนน)
+## งานที่ 1: สร้างโครงการและ Board Setup
 
 ### ขั้นตอน:
 1. เปิด KiCad 9.0 → สร้าง New Project ชื่อ **`StudentID_Exam`**
@@ -103,11 +103,9 @@
 > **ตัวอย่าง Board Setup – Violations:**  
 > ![Violation Board Setup](imgs/Violation_Board_Setup.png)
 
-**เกณฑ์คะแนน:** Title Block และ Board Setup ถูกต้องครบถ้วน = 1 คะแนน
-
 ---
 
-## งานที่ 2: วงจร USB-C Power Input (3 คะแนน)
+## งานที่ 2: วงจร USB-C Power Input
 
 > **ตัวอย่างการกรอก Symbol Fields Table (Reference / Value / Footprint):**  
 > ![Symbol Fields Table](imgs/Symbol_Fields_Table.png)
@@ -131,11 +129,9 @@
 4. เพิ่ม Power Symbol `VBUS` และ `GND` (กด `P`)
 5. ตรวจสอบว่า CC1 และ CC2 ต่อลง GND ผ่าน R1, R2 ตามลำดับ
 
-**เกณฑ์คะแนน:** อุปกรณ์ครบ 1 คะแนน / การต่อสาย VBUS+GND+CC ถูกต้อง 1 คะแนน / ESD ถูกที่ 1 คะแนน
-
 ---
 
-## งานที่ 3: วงจร 3.3V LDO Regulator (2 คะแนน)
+## งานที่ 3: วงจร 3.3V LDO Regulator
 
 ### อุปกรณ์ที่ต้องเพิ่มใน Schematic:
 
@@ -155,11 +151,9 @@
 4. ต่อขา GND -> Net `GND`
 5. วาง Decoupling Capacitor รอบ U1 ตามแผนผัง
 
-**เกณฑ์คะแนน:** U1 และ Net ถูกต้อง 1 คะแนน / Capacitor ครบและต่อถูก 1 คะแนน
-
 ---
 
-## งานที่ 4: วงจร SPI Flash Memory (2 คะแนน)
+## งานที่ 4: วงจร SPI Flash Memory
 
 ### อุปกรณ์ที่ต้องเพิ่มใน Schematic:
 
@@ -176,11 +170,9 @@
 4. WP# และ HOLD# ให้ต่อ Pull-up กับ `+3V3` โดยตรง
 5. วาง C7, C8 ใกล้ขา VCC ของ IC1
 
-**เกณฑ์คะแนน:** IC1 + Net Labels ถูกต้อง 1 คะแนน / Pull-up + Decoupling 1 คะแนน
-
 ---
 
-## งานที่ 5: วงจร WS2812B RGB LED, Push Button และ Crystal (1 คะแนน)
+## งานที่ 5: วงจร WS2812B RGB LED, Push Button และ Crystal
 
 ### อุปกรณ์ที่ต้องเพิ่มใน Schematic:
 
@@ -201,11 +193,9 @@
 3. เพิ่ม Y1 Crystal -> ต่อขา XIN/XOUT กับ Net Labels
 4. สร้าง Net Labels: `LED_DATA`, `BOOT_SEL`, `MCU_RUN`, `XTAL_IN`, `XTAL_OUT`
 
-**เกณฑ์คะแนน:** D2 + SW1/SW2 + Y1 ครบและต่อสายถูกต้อง = 1 คะแนน
-
 ---
 
-## งานที่ 6: ERC และ Annotation (1 คะแนน)
+## งานที่ 6: ERC และ Annotation
 
 ### ขั้นตอนปฏิบัติ:
 1. ไปที่เมนู **Tools -> Annotate Schematic** -> คลิก Annotate All
@@ -221,11 +211,9 @@
 > **ตัวอย่างผล ERC ที่ผ่าน (0 Errors):**  
 > ![SCH Error Check](imgs/SCH_Error_Check.png)
 
-**เกณฑ์คะแนน:** ERC ผ่าน 0 Error = 1 คะแนน
-
 ---
 
-## งานที่ 7: PCB Layout - Import Netlist และ Component Placement (5 คะแนน)
+## งานที่ 7: PCB Layout - Import Netlist และ Component Placement
 
 ### ขั้นตอนที่ 1 - Update PCB จาก Schematic:
 1. ใน Schematic Editor -> **Tools -> Update PCB from Schematic**
@@ -236,7 +224,7 @@
 2. ขนาด Board: **ไม่เกิน 35 mm x 35 mm** (กำหนดเองในช่วง 20–35 mm)
 3. ใช้ Line Width: **0.05 mm**
 
-> ⚠️ **Board ที่มีขนาดเกิน 35×35 mm จะถูกหักคะแนน Board Outline ทั้งหมด**
+> ⚠️ **Board ต้องมีขนาดไม่เกิน 35×35 mm มิฉะนั้นถือว่าไม่ผ่านเงื่อนไขขนาดบอร์ด**
 
 ### ขั้นตอนที่ 3 - จัดวาง Component ตามกฎต่อไปนี้:
 
@@ -269,11 +257,9 @@
 
 > 💡 **เคล็ดลับการเตรียมรูป:** ให้ใช้รูปโลโก้ CE ที่มีพื้นหลังสีดำ และส่วนที่ต้องการพิมพ์เป็นสีขาว เพื่อให้ KiCad แปลงเป็น Silkscreen ได้ถูกต้อง
 
-**เกณฑ์คะแนน:** Board Outline ถูก 1 คะแนน / Placement ถูกตามกฎ 3 คะแนน / ชื่อ + โลโก้ CE บน B.SilkS 1 คะแนน
-
 ---
 
-## งานที่ 8: PCB Layout - Routing (5 คะแนน)
+## งานที่ 8: PCB Layout - Routing
 
 ### Net Classes ที่ต้องตั้งค่าก่อน Route:
 
@@ -320,16 +306,17 @@
 5. กด `B` เพื่อ **Fill All Zones** ทุกครั้งหลังแก้ไข
 6. ตรวจสอบว่า GND Fill ครอบคลุมพื้นที่ > 70% ของแต่ละ Layer
 
-> ⚠️ **Layer ที่ไม่มี Fill Zone จะถูกหักคะแนน GND Plane ทันที**
+> **ตัวอย่าง Copper Zone Properties:**  
+> ![Copper Zone Properties](imgs/Fill_Zone.png)
+
+> ⚠️ **ต้องมี Fill Zone ครบทุก Layer ที่กำหนด มิฉะนั้นถือว่าไม่ผ่านเงื่อนไข GND Plane**
 
 ### ขั้นตอนที่ 4 - Add Stitching Via:
 - เพิ่ม Via เชื่อม GND ระหว่าง F.Cu ↔ In1.Cu ↔ In2.Cu ↔ B.Cu อย่างน้อย **8 จุด** กระจายทั่ว Board
 
-**เกณฑ์คะแนน:** Net Class ถูก 1 คะแนน / USB Diff Pair 1 คะแนน / Power Trace 1 คะแนน / GND Fill Zone ครบ 4 Layer 2 คะแนน
-
 ---
 
-## งานที่ 9: DRC และ 3D View (10 คะแนน)
+## งานที่ 9: DRC และ 3D View
 
 ### ขั้นตอนที่ 1 - Design Rule Check:
 1. ไปที่ **Inspect -> Design Rules Checker (DRC)**
@@ -353,9 +340,7 @@
 - `PCB_Layout_Top.png` — แสดง Layer **F.Cu** (หน้า PCB)
 - `PCB_Layout_Bottom.png` — แสดง Layer **B.Cu** (หลัง PCB)
 
-> ⚠️ **Component ที่ไม่มี 3D Model จะถูกหัก 1 คะแนนต่อตัว**
-
-**เกณฑ์คะแนน:** DRC 0 Error = 4 คะแนน / Component ครบทุกตัวมี 3D Model = 4 คะแนน / Screenshot 3D_Top + 3D_Bottom ครบ = 2 คะแนน
+> ⚠️ **Component ทุกตัวต้องมี 3D Model ครบถ้วน**
 
 ---
 
@@ -363,30 +348,35 @@
 
 ### ไฟล์ที่ต้องส่ง:
 ```
-StudentID_Exam.zip                   ← (1) Zip โฟลเดอร์โครงการทั้งหมด
+StudentID_Exam.zip                   ← Zip โฟลเดอร์โครงการทั้งหมด
 ├── StudentID_Exam.kicad_pro
 ├── StudentID_Exam.kicad_sch
 └── StudentID_Exam.kicad_pcb
 
-Screenshots_Schematic/               ← (2) รูป Schematic 2 รูป
-├── SCH_Full.png                     ← ภาพรวม Schematic ทั้งหมด
-└── SCH_ERC_0Error.png               ← ผล ERC ที่ผ่าน 0 Errors
+Screenshots_Schematic/               
+└── SCH_Full.png                     ← ภาพรวม Schematic ทั้งหมด
 
-Screenshots_PCB/                     ← (3) รูป PCB 3 รูป
-├── PCB_Full.png                     ← ภาพรวม PCB ทั้งหมด
-└── PCB_DRC_0Error.png               ← ผล DRC ที่ผ่าน 0 Errors
+Screenshots_PCB/                     
+└── PCB_Full.png                     ← ภาพรวม PCB ทั้งหมด
 
-Screenshots_3D/                      ← (4) รูป 3D 2 รูป
+Screenshots_3D/                      
 ├── 3D_Top.png                       ← มุมมองด้านบน (Top)
 └── 3D_Bottom.png                    ← มุมมองด้านล่าง (Bottom)
 ```
 
-### ตารางคะแนนรวม:
-| งาน | คะแนนเต็ม |
-|SCH|10|
-|PCB|10|
-|3D|10|
-|รวม|30|
+### ตัวอย่างรูปที่ใช้ส่งงาน:
+
+> **Schematic (SCH_Full.png):**  
+> ![Schematic Full](imgs/SCH_pic.png)
+
+> **PCB Layout (PCB_Full.png):**  
+> ![PCB Full](imgs/PCB_Pic.png)
+
+> **3D Top (3D_Top.png):**  
+> ![3D Top](imgs/3D_F_Pic.png)
+
+> **3D Bottom (3D_Bottom.png):**  
+> ![3D Bottom](imgs/3D_B_Pic.png)
 
 ---
 
