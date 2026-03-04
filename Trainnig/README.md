@@ -1,26 +1,59 @@
-## อบรมการทำแผ่น PCB ด้วย โปรแกรม KiCad
-### วงจรตัวอย่าง 
-วงจรตัวอย่างสำหรับการออกแบบวงจร PCB ด้วย Thinkercad
+<div align="center">
+
+<img src="../Exam/imgs/CE.jpg" width="110" alt="CE Logo"/>
+
+# 🖨️ อบรมการทำแผ่น PCB ด้วย KiCad
+
+**สาขาวิศวกรรมคอมพิวเตอร์ · มหาวิทยาลัย KSU**
+
+<br/>
+
+[![KiCad](https://img.shields.io/badge/KiCad-9.0-blue?style=for-the-badge&logo=kicad&logoColor=white)](https://www.kicad.org/)
+[![Board](https://img.shields.io/badge/Board-ESP32--C3-red?style=for-the-badge)](https://www.espressif.com/)
+[![PCB](https://img.shields.io/badge/PCB-JLCPCB-orange?style=for-the-badge)](https://jlcpcb.com/)
+[![Slides](https://img.shields.io/badge/Slides-Canva-00C4CC?style=for-the-badge&logo=canva&logoColor=white)](https://www.canva.com/design/DAGdEUbxk0E/IqLkosl9fwG4LXA7SQ4JsQ/view)
+
+<br/>
+
+[🔌 วงจรตัวอย่าง](#-วงจรตัวอย่าง) · [🧩 อุปกรณ์](#-อุปกรณ์อิเล็กทรอนิกส์) · [📐 Schematic](#-kicad-schematic-editor) · [🖨️ PCB Layout](#-kicad-pcb-editor) · [📦 Gerber](#-generate-gerber-files)
+
+</div>
+
+---
+
+## 🔌 วงจรตัวอย่าง
+วงจรตัวอย่างสำหรับการออกแบบวงจร PCB ด้วย TinkerCAD
+
+> [!NOTE]
+> จำลองวงจร LED + LDR บน ESP32 C3 Super Mini ก่อนออกแบบ PCB จริง
+
+🔗 **TinkerCAD Circuit:** [LED + LDR ESP32](https://www.tinkercad.com/things/eSUcswWTFzh-ledldr?sharecode=JfBLzF_0L9jgbdxzz1LCe_89Y2LhkJQhNdCu0lRxLeg)
+
 ![t0](https://github.com/user-attachments/assets/8e69e0ec-dfc7-4d61-a3cd-85a739e22710)
+
 ![esp32 pin](https://github.com/user-attachments/assets/befdf9ab-9e73-42b1-82ec-ba1d9e9a0179)
 
-### อุปกรณ์อิเล็กทรอนิกส์
-- ESP32 C3 Super Mini (ส่วนประมวลผล)
-  - ![esp32 bak bak](https://github.com/user-attachments/assets/ad510dd9-e1c6-43c7-a7f2-dede058a4d55)   ![esp32 c3 bak bak](https://github.com/user-attachments/assets/e3ff696d-ea86-488e-9baa-d51a653e5871)
-- ปุ่มกด
-  - ![btn](https://github.com/user-attachments/assets/fdfcbe7f-2956-4075-96ac-ddc428b21e3c)
-- หลอด LED
-  - ![led](https://github.com/user-attachments/assets/066509de-0232-4343-87b9-503fbe5afb4e)
-- ตัวรับแสง LDR
-  - ![LDR](https://github.com/user-attachments/assets/7039e88f-f174-420f-bd35-d0a435fa26d8)
-- ตัวต้านทาน (R)
-  - ![R](https://github.com/user-attachments/assets/2de20a5d-d331-4426-898e-c0de57905a1f)
-- ตัวต่อไฟ Terminal
-  - ![terminal](https://github.com/user-attachments/assets/b0b5b466-7c3b-4ede-87fd-14785ebb415f)
+---
 
-### การใช้งานโปรแกรม KiCad EDA
-#### KiCad Schmatic Editor 
-- https://www.kicad.org/
+## 🧩 อุปกรณ์อิเล็กทรอนิกส์
+
+| # | อุปกรณ์ | หน้าที่ | รูปภาพ |
+|:-:|:--------|:--------|:-------:|
+| 1 | **ESP32 C3 Super Mini** | ส่วนประมวลผลหลัก | ![esp32](https://github.com/user-attachments/assets/ad510dd9-e1c6-43c7-a7f2-dede058a4d55) ![esp32c3](https://github.com/user-attachments/assets/e3ff696d-ea86-488e-9baa-d51a653e5871) |
+| 2 | **ปุ่มกด** | รับ Input จากผู้ใช้ | ![btn](https://github.com/user-attachments/assets/fdfcbe7f-2956-4075-96ac-ddc428b21e3c) |
+| 3 | **หลอด LED** | แสดงผล Output | ![led](https://github.com/user-attachments/assets/066509de-0232-4343-87b9-503fbe5afb4e) |
+| 4 | **ตัวรับแสง LDR** | ตรวจจับความเข้มแสง | ![LDR](https://github.com/user-attachments/assets/7039e88f-f174-420f-bd35-d0a435fa26d8) |
+| 5 | **ตัวต้านทาน (R)** | จำกัดกระแสไฟ | ![R](https://github.com/user-attachments/assets/2de20a5d-d331-4426-898e-c0de57905a1f) |
+| 6 | **ตัวต่อไฟ Terminal** | จ่ายไฟให้วงจร | ![terminal](https://github.com/user-attachments/assets/b0b5b466-7c3b-4ede-87fd-14785ebb415f) |
+
+---
+
+## 📐 KiCad Schematic Editor
+
+🔗 **KiCad EDA:** [kicad.org](https://www.kicad.org/)
+
+> [!TIP]
+> ทำตามขั้นตอนด้านล่างเพื่อสร้าง Schematic วงจรและตรวจสอบ ERC ก่อน Update ไปยัง PCB Editor
 1. เปิดโปรแกรมจากปุ่ม Start และ ค้นหา Kicad
  - ![Screenshot 2025-01-23 211224](https://github.com/user-attachments/assets/000366e6-a9db-40fb-8763-ecdff5a4c994)
 2. สร้าง Project ใหม่ 
@@ -46,7 +79,10 @@
 12. Add ส่วน GND (Ground) (Add Power (P))
  - ![Screenshot 2025-01-23 213832](https://github.com/user-attachments/assets/e56f471b-7a09-40ac-bc97-f2e91cfafe15)
 
-#### Add New Libraries
+---
+
+### 📦 Add New Libraries
+
 13. ทำการเพิ่มอุปกรณ์ ESP32 C3 และ ปุ่มกด TS13-1212-73 ใน Manage Symbol Libraries
  - ![Screenshot 2025-01-23 214642](https://github.com/user-attachments/assets/f7413409-2dc7-4452-88a1-27a2459d79f6)
 14. กดปุ่ม Add existing library to table 
@@ -75,7 +111,10 @@
 25. อุปกรณ์ทั้งหมดของวงจร PCB นี้
  - ![Screenshot 2025-01-23 220243](https://github.com/user-attachments/assets/a1fd43c9-909a-4c66-8bf7-7743fddbb7fc)
 
-#### Wiring & Checker
+---
+
+### 🔧 Wiring & ERC Checker
+
 26. ทำการลากเส้น เชื่อมต่อ อุปกรณ์ (Add Wire (W))
  - ![Screenshot 2025-01-23 213914](https://github.com/user-attachments/assets/13cad75e-d41e-4298-a46f-2bdf14b1e489)
 27. เมื่อต่อวงจรเสร็จ ทำการตรวจสอบ กดปุ่ม Electrical Rules Checker
@@ -91,7 +130,10 @@
 32. Save & Go Tools -> Update PCB from Schematic
  - ![Screenshot 2025-01-23 220649](https://github.com/user-attachments/assets/922bd10e-69ba-49db-b4a0-84fb1bf2c05d)
 
-#### KiCad PCB Editor 
+---
+
+## 🖨️ KiCad PCB Editor
+
 33. กด Update เพิ่มทำการเพิ่มอุปกรณ์ยัง PCB Editor
  - ![Screenshot 2025-01-23 220839](https://github.com/user-attachments/assets/cf6cc13b-b73b-4c04-8688-ee72c841426b)
 34. กด Click 1 ครั้งวางทั้งหมด
@@ -115,7 +157,10 @@
 43. เลือก Route tracks (X) เดินลายวงจร
  - ![Screenshot 2025-01-23 221955](https://github.com/user-attachments/assets/756840f7-d7c2-4d60-9e01-0464a6fb55d1)
 
-#### Add Plugin to Kicad
+---
+
+### 🔌 Add Plugin to KiCad
+
 44. กด Plugin and Content Manager
  - ![Screenshot 2025-01-23 222132](https://github.com/user-attachments/assets/432f7ee7-ac68-4090-bd56-5f7b64f3a5c2)
 45. ค้นหา Freerouting & Fabrication Toolkit และ ติดตั้ง
@@ -131,12 +176,18 @@
  - ![Screenshot 2025-01-23 222644](https://github.com/user-attachments/assets/4a739852-02fb-4e39-b2ed-64f1f231b8b4)
 50. กดปุ่ม Start the auto-router
  - ![Screenshot 2025-01-23 222752](https://github.com/user-attachments/assets/c6ff6949-099c-4972-80ce-c230658c8a33)
+---
+
+### ✅ DRC & 3D Viewer
+
 51. กด Design Rules Checker เพื่อตรวจสอบ
  - ![Screenshot 2025-01-23 223222](https://github.com/user-attachments/assets/171acd4e-70cc-44ca-a4ab-584cefd0cba4)
 52. กด 3D Viewer เพื่อดู 3D PCB Board
  - ![Screenshot 2025-01-23 223748](https://github.com/user-attachments/assets/490c6274-3a9c-4c4d-a0bd-8ad816a11f64)
 
-#### Generate Gerber Files
+---
+
+## 📦 Generate Gerber Files
 53. กด Fabrication toolkit 
  - ![Screenshot 2025-01-23 223246](https://github.com/user-attachments/assets/a2a7b18d-656f-47d7-a843-31620335ab64)
 54. กด Generate 
@@ -144,8 +195,12 @@
 55. จะได้ Gerber Zip File 
  - ![Screenshot 2025-01-23 223324](https://github.com/user-attachments/assets/8dd25329-fd51-490b-9e80-705aa71580e8)
 
-#### JLCPCB
-- https://www.jlcpcb.com/
+---
+
+## 🏭 JLCPCB — สั่งผลิต PCB
+
+🔗 **JLCPCB:** [jlcpcb.com](https://www.jlcpcb.com/)
+
 56. สั่งผลิต PCB จาก JLCPCB
  - ![Screenshot 2025-01-23 223350](https://github.com/user-attachments/assets/37f5802f-658d-45f0-a332-4cea600b2b50)
 57. ลาก Gerber File ที่ได้ไปยัง Add Gerber บนเวปไซต์
@@ -153,4 +208,12 @@
 58. ดูลาย 3D จาก JLCPCB
  - ![Screenshot 2025-01-23 223649](https://github.com/user-attachments/assets/dc4665b4-03bf-4544-9e0b-363c73383c4e)
 
-https://www.canva.com/design/DAGdEUbxk0E/IqLkosl9fwG4LXA7SQ4JsQ/view?utm_content=DAGdEUbxk0E&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h1f56214bf2
+---
+
+<div align="center">
+
+*KiCad PCB Training · Computer Engineering CE6841/21 · KSU · 2026*
+
+[![Slides](https://img.shields.io/badge/📊_ดูสไลด์ประกอบการอบรม-Canva-00C4CC?style=for-the-badge&logo=canva&logoColor=white)](https://www.canva.com/design/DAGdEUbxk0E/IqLkosl9fwG4LXA7SQ4JsQ/view)
+
+</div>
