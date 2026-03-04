@@ -1,7 +1,6 @@
 ﻿# สอบปฏิบัติ: การออกแบบวงจร PCB ด้วย KiCad
-## วิชา: การออกแบบ PCB ด้วย KiCad  
-**ชื่อ:** ___________________________  **รหัสนักศึกษา:** ___________________________  
-**สาขา:** CE6841/21  **วันที่:** 4 มีนาคม 2026  **เวลา: 3 ชั่วโมง**
+
+**เวลาในการทำข้อสอบ:** 3 ชั่วโมง
 
 ---
 
@@ -61,9 +60,6 @@
 | RP2350A-QFN60 | RP2350A Symbol + QFN-60 Footprint + `.step` 3D Model |
 | ME6217C33M5G | LDO Symbol + SOT-23-5 Footprint + `.step` 3D Model |
 | W25Q16JVUXIQ | Flash Symbol + WSON-8 Footprint + `.step` 3D Model |
-| WS2812B | RGB LED Symbol + PLCC-4 Footprint + `.step` 3D Model |
-| ESD9B5.0ST5G | ESD Symbol + SOD-923 Footprint + `.step` 3D Model |
-| USB_C_Receptacle_USB2.0_16P | USB-C Symbol + SMD Footprint + `.step` 3D Model |
 | C3E-12.000-12-3030-R | Crystal Symbol + SMD 3.2×2.5 Footprint + `.step` 3D Model |
 
 ---
@@ -76,7 +72,7 @@
 
 | ช่อง | ข้อมูลที่ต้องกรอก |
 |------|-----------------|
-| Title | RP2350A Dev Board |
+| Title | Exam |
 | Date | 2026-03-04 |
 | Revision | V1.0 |
 | Company | ชื่อ-นามสกุลนักศึกษา |
@@ -299,10 +295,6 @@
 2. ไปที่ **Place -> Add Filled Zone** (หรือกด `Ctrl+Shift+Z`)
 3. วาด Zone ให้ครอบ Board ทั้งหมดภายใน Edge.Cuts
 4. ในกล่อง Zone Properties:
-   - Net: เลือก **GND**
-   - Pad Connection: **Thermal Relief**
-   - Min Width: **0.25 mm**
-   - Clearance: **0.3 mm**
 5. กด `B` เพื่อ **Fill All Zones** ทุกครั้งหลังแก้ไข
 6. ตรวจสอบว่า GND Fill ครอบคลุมพื้นที่ > 70% ของแต่ละ Layer
 
@@ -346,6 +338,9 @@
 
 ## สรุปการส่งงาน
 
+### ลิงก์การส่งงาน:
+[คลิกที่นี่เพื่อส่งงาน](https://docs.google.com/forms/d/e/1FAIpQLSdr00fWbVABh_uF_Hmt_Hmi3ux_y0vmjzFsGliQYqPfY1zKxA/viewform?usp=dialog)
+
 ### ไฟล์ที่ต้องส่ง:
 ```
 StudentID_Exam.zip                   ← Zip โฟลเดอร์โครงการทั้งหมด
@@ -367,7 +362,7 @@ Screenshots_3D/
 ### ตัวอย่างรูปที่ใช้ส่งงาน:
 
 > **Schematic (SCH_Full.png):**  
-> ![Schematic Full](imgs/SCH_pic.png)
+> ![Schematic Full](imgs/SCH_Pic.png)
 
 > **PCB Layout (PCB_Full.png):**  
 > ![PCB Full](imgs/PCB_Pic.png)
