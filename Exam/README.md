@@ -17,7 +17,7 @@
 
 > ⚠️ **อุปกรณ์บางตัวไม่มีใน KiCad Library มาตรฐาน ต้องโหลดเพิ่มก่อนเริ่มทำข้อสอบ**
 
-### ขั้นตอนที่ 1 – ดาวน์โหลด Library Files
+### ดาวน์โหลด Library Files
 
 เข้าลิงก์ด้านล่าง แล้วดาวน์โหลดไฟล์ทั้งหมดในโฟลเดอร์:
 
@@ -25,7 +25,7 @@
 
 แตกไฟล์ไว้ที่โฟลเดอร์ที่จำง่าย เช่น `C:\KiCad_Lib\`
 
-### ขั้นตอนที่ 2 – เพิ่ม Symbol Library ใน KiCad
+### เพิ่ม Symbol Library ใน KiCad
 
 1. เปิด KiCad → **Preferences → Manage Symbol Libraries**
 2. คลิกแท็บ **Global Libraries** (ใช้ได้กับทุกโครงการ)
@@ -33,7 +33,7 @@
 4. เลือกไฟล์ `.kicad_sym` ที่ดาวน์โหลดมา
 5. คลิก **OK**
 
-### ขั้นตอนที่ 3 – เพิ่ม Footprint Library ใน KiCad
+### เพิ่ม Footprint Library ใน KiCad
 
 1. เปิด KiCad → **Preferences → Manage Footprint Libraries**
 2. คลิกแท็บ **Global Libraries**
@@ -64,7 +64,7 @@
 
 ---
 
-## งานที่ 1: สร้างโครงการและ Board Setup
+## สร้างโครงการและ Board Setup
 
 ### ขั้นตอน:
 1. เปิด KiCad 9.0 → สร้าง New Project ชื่อ **`StudentID_Exam`**
