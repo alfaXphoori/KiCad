@@ -72,7 +72,6 @@ KiCad/
 | ชื่อ | รายละเอียด | ลิงก์ |
 |:----|:-----------|:------|
 | **KiCad Forum** | ชุมชนผู้ใช้ KiCad ตั้งคำถาม/ตอบปัญหา | [forum.kicad.info](https://forum.kicad.info/) |
-| **Raspberry Pi RP2350** | Datasheet RP2350A MCU | [datasheets.raspberrypi.com](https://datasheets.raspberrypi.com/rp2350/rp2350-datasheet.pdf) |
 | **IPC Standards** | มาตรฐานการออกแบบ PCB (IPC-2221) | [ipc.org](https://www.ipc.org/) |
 
 ---
