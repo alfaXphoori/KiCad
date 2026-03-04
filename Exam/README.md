@@ -1,6 +1,6 @@
 ﻿<div align="center">
 
-![CE Logo](imgs/CE.jpg)
+<img src="Exam/imgs/CE.jpg" width="120" alt="CE Logo"/>
 
 # 🖥️ สอบปฏิบัติ: การออกแบบวงจร PCB ด้วย KiCad
 
