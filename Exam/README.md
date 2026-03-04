@@ -101,97 +101,7 @@
 
 ---
 
-## งานที่ 2: วงจร USB-C Power Input
-
-> **ตัวอย่างการกรอก Symbol Fields Table (Reference / Value / Footprint):**  
-> ![Symbol Fields Table](imgs/Symbol_Fields_Table.png)
-
-### อุปกรณ์ที่ต้องเพิ่มใน Schematic:
-
-| Reference | Library / Symbol | Value | Footprint |
-|-----------|-----------------|-------|-----------|
-| J1 | Connector_USB:USB_C_Receptacle_USB2.0_16P | USB_C_Receptacle_USB2.0_16P | ตามที่อยู่ใน Library |
-| D3 | SnapEDA / Custom | ESD9B5.0ST5G | SOD-923 |
-| R1 | Device:R_US | 5.1K | R_0402_1005Metric |
-| R2 | Device:R_US | 5.1K | R_0402_1005Metric |
-| C1 | Device:C_US | 15uF | C_0805_2012Metric |
-| C2 | Device:C_US | 10uF | C_0805_2012Metric |
-| C5 | Device:C_US | 15uF | C_0805_2012Metric |
-
-### ขั้นตอนปฏิบัติ:
-1. เปิด Schematic Editor
-2. กด `A` เพื่อเพิ่ม Symbol แต่ละตัวตามตารางด้านบน
-3. ใช้ `W` วาดสาย Wire เชื่อมต่อตามแผนผัง
-4. เพิ่ม Power Symbol `VBUS` และ `GND` (กด `P`)
-5. ตรวจสอบว่า CC1 และ CC2 ต่อลง GND ผ่าน R1, R2 ตามลำดับ
-
----
-
-## งานที่ 3: วงจร 3.3V LDO Regulator
-
-### อุปกรณ์ที่ต้องเพิ่มใน Schematic:
-
-| Reference | Library / Symbol | Value | Footprint |
-|-----------|-----------------|-------|-----------|
-| U1 | SnapEDA / Custom | ME6217C33M5G | SOT-23-5 |
-| C15 | Device:C_US | 100nF | C_0402_1005Metric |
-| C16 | Device:C_US | 100nF | C_0402_1005Metric |
-| C18 | Device:C_US | 4.7uF | C_0402_1005Metric |
-| C19 | Device:C_US | 4.7uF | C_0402_1005Metric |
-| C9  | Device:C_US | 100nF | C_0402_1005Metric |
-
-### ขั้นตอนปฏิบัติ:
-1. เพิ่ม Symbol U1 (ME6217C33M5G) และกำหนด Footprint เป็น SOT-23-5
-2. ต่อขา IN ของ U1 -> Net `VBUS`
-3. ต่อขา OUT ของ U1 -> สร้าง Power Net ใหม่ชื่อ `+3V3`
-4. ต่อขา GND -> Net `GND`
-5. วาง Decoupling Capacitor รอบ U1 ตามแผนผัง
-
----
-
-## งานที่ 4: วงจร SPI Flash Memory
-
-### อุปกรณ์ที่ต้องเพิ่มใน Schematic:
-
-| Reference | Library / Symbol | Value | Footprint |
-|-----------|-----------------|-------|-----------|
-| IC1 | SnapEDA / Custom | W25Q16JVUXIQ | WSON-8_6x5mm |
-| C7  | Device:C_US | 100nF | C_0402_1005Metric |
-| C8  | Device:C_US | 100nF | C_0402_1005Metric |
-
-### ขั้นตอนปฏิบัติ:
-1. เพิ่ม IC1 และตั้งค่า Footprint เป็น WSON-8
-2. ต่อ VCC -> `+3V3`, GND -> `GND`
-3. สร้าง Net Labels: `FLASH_CS`, `FLASH_MISO`, `FLASH_MOSI`, `FLASH_SCK`
-4. WP# และ HOLD# ให้ต่อ Pull-up กับ `+3V3` โดยตรง
-5. วาง C7, C8 ใกล้ขา VCC ของ IC1
-
----
-
-## งานที่ 5: วงจร WS2812B RGB LED, Push Button และ Crystal
-
-### อุปกรณ์ที่ต้องเพิ่มใน Schematic:
-
-| Reference | Library / Symbol | Value | Footprint |
-|-----------|-----------------|-------|-----------|
-| D2  | SnapEDA / Custom | WS2812B | LED_WS2812B_PLCC4 |
-| SW1 | Device:SW_Push | SW_Push (BOOT) | SW_SPST |
-| SW2 | Device:SW_Push | SW_Push (RESET) | SW_SPST |
-| Y1  | SnapEDA / Custom | C3E-12.000-12-3030-R | XTAL_3.2x2.5mm |
-| R3  | Device:R_US | 1K | R_0402_1005Metric |
-| R7  | Device:R_US | 1K | R_0402_1005Metric |
-| R8  | Device:R_US | 1K | R_0402_1005Metric |
-| C3  | Device:C_US | 10uF | C_0805_2012Metric |
-
-### ขั้นตอนปฏิบัติ:
-1. เพิ่ม D2 (WS2812B) -> ต่อ VDD/GND และ DIN ผ่าน R8
-2. เพิ่ม SW1, SW2 พร้อม Pull-up Resistor R3, R7
-3. เพิ่ม Y1 Crystal -> ต่อขา XIN/XOUT กับ Net Labels
-4. สร้าง Net Labels: `LED_DATA`, `BOOT_SEL`, `MCU_RUN`, `XTAL_IN`, `XTAL_OUT`
-
----
-
-## งานที่ 6: ERC และ Annotation
+## ERC และ Annotation
 
 ### ขั้นตอนปฏิบัติ:
 1. ไปที่เมนู **Tools -> Annotate Schematic** -> คลิก Annotate All
@@ -209,7 +119,7 @@
 
 ---
 
-## งานที่ 7: PCB Layout - Import Netlist และ Component Placement
+##  PCB Layout - Import Netlist และ Component Placement
 
 ### ขั้นตอนที่ 1 - Update PCB จาก Schematic:
 1. ใน Schematic Editor -> **Tools -> Update PCB from Schematic**
@@ -222,20 +132,7 @@
 
 > ⚠️ **Board ต้องมีขนาดไม่เกิน 35×35 mm มิฉะนั้นถือว่าไม่ผ่านเงื่อนไขขนาดบอร์ด**
 
-### ขั้นตอนที่ 3 - จัดวาง Component ตามกฎต่อไปนี้:
-
-| อุปกรณ์ | ตำแหน่งที่ต้องวาง |
-|---------|-----------------|
-| J1 (USB-C) | ขอบด้านซ้ายหรือขอบด้านล่างของ Board |
-| U1 (LDO) | ใกล้ J1 บน F.Cu |
-| IC1 (Flash) | ด้าน B.Cu (ด้านหลัง) ใกล้บริเวณ MCU |
-| D2 (WS2812B) | มุม Board ด้านใดด้านหนึ่ง |
-| SW1, SW2 | ขอบ Board ด้านตรงข้ามกับ J1 |
-| Y1 (Crystal) | ใกล้ขา XTAL ของ MCU ระยะ < 5 mm |
-| Decoupling Cap | ห่างจาก IC ที่รับไฟไม่เกิน 2 mm |
-| J2, J3, J4 (Headers) | ขอบ Board ด้านบนหรือด้านข้าง |
-
-### ขั้นตอนที่ 4 - เพิ่มชื่อและโลโก้ CE บน Silkscreen ด้านหลัง:
+### เพิ่มชื่อและโลโก้ CE บน Silkscreen ด้านหลัง:
 
 **ส่วนที่ 1 – พิมพ์ชื่อตัวเอง (Text):**
 1. เลือก Layer **B.SilkS**
@@ -272,23 +169,9 @@
 > **ตัวอย่าง Net Classes ใน Board Setup:**  
 > ![Net Classes Board Setup](imgs/Net_Classes_Board_Setup.png)
 
-### ขั้นตอนที่ 2 - Route สายสำคัญด้วยตนเอง:
-1. Route USB D+/D- เป็น **Differential Pair** (กด `X` -> Route Differential Pair)
-   - ความยาว D+ และ D- ต้องเท่ากัน (Length Matching)
-   - ไม่ให้ผ่านใต้อุปกรณ์อื่น
-2. Route Power Traces (VBUS, +3V3) ด้วย Track Width 0.5 mm
-3. Route SPI Flash Signals (FLASH_CS, MOSI, MISO, SCK) บน F.Cu
-
-### ขั้นตอนที่ 3 - Copper Pour / Fill Zone (บังคับ):
+### ขั้นตอนที่ 2 - Copper Pour / Fill Zone (บังคับ):
 
 ต้องทำ Fill Zone ครบทั้ง **4 Layer** ต่อไปนี้:
-
-| Layer | Net | วิธีเพิ่ม Zone |
-|-------|-----|---------------|
-| **F.Cu** | GND | Place -> Add Filled Zone หรือกด `Ctrl+Shift+Z` |
-| **In1.Cu** | GND | เหมือนกัน (Ground Plane Layer หลัก) |
-| **In2.Cu** | GND | เหมือนกัน (Power Plane สำรอง) |
-| **B.Cu** | GND | เหมือนกัน |
 
 **ขั้นตอนสำหรับแต่ละ Layer:**
 1. เลือก Layer เป้าหมาย (F.Cu / In1.Cu / In2.Cu / B.Cu)
@@ -303,12 +186,9 @@
 
 > ⚠️ **ต้องมี Fill Zone ครบทุก Layer ที่กำหนด มิฉะนั้นถือว่าไม่ผ่านเงื่อนไข GND Plane**
 
-### ขั้นตอนที่ 4 - Add Stitching Via:
-- เพิ่ม Via เชื่อม GND ระหว่าง F.Cu ↔ In1.Cu ↔ In2.Cu ↔ B.Cu อย่างน้อย **8 จุด** กระจายทั่ว Board
-
 ---
 
-## งานที่ 9: DRC และ 3D View
+## DRC และ 3D View
 
 ### ขั้นตอนที่ 1 - Design Rule Check:
 1. ไปที่ **Inspect -> Design Rules Checker (DRC)**
