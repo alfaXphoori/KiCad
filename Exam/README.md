@@ -84,11 +84,8 @@
 | พารามิเตอร์ | ค่าที่ต้องตั้ง |
 |:-----------|:-------------|
 | Board Layers | 4 Layer (F.Cu / In1.Cu / In2.Cu / B.Cu) |
+| Board Size | 20–35 mm × 20–35 mm |
 | Board Thickness | 1.6 mm |
-| Min Track Width | 0.2 mm |
-| Min Clearance | 0.2 mm |
-| Min Via Hole Diameter | 0.3 mm |
-| Min Via Annular Width | 0.1 mm |
 
 > **Physical:**  
 > ![Physical Board Setup](imgs/Physical_Board_Setup.png)
