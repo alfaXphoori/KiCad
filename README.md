@@ -15,7 +15,7 @@
 
 <br/>
 
-[📝 ข้อสอบ](#-เนื้อหาในแต่ละโฟลเดอร์) · [📦 Library](#-library-และ-symbol) · [🏭 ผลิต PCB](#-การผลิต-pcb) · [🚀 เริ่มต้น](#-เริ่มต้นใช้งาน)
+[📝 ข้อสอบ](#-เนื้อหาในแต่ละโฟลเดอร์) · [📦 Library](#-library-และ-symbol) · [🏭 ผลิต PCB](#-การผลิต-pcb) · [🚀 เริ่มต้น](#-เริ่มต้นใช้งาน) · [📊 ดูคะแนน](https://docs.google.com/spreadsheets/d/1sqyXjQikLpb7wskNJWskZg9jCiNWMEP9YaTy3ogxIcU/edit?usp=sharing)
 
 </div>
 
